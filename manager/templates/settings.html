@@ -1,0 +1,29 @@
+<span style="color:black !important;">
+<div class="modal-header">
+	<h3>Settings</h3>
+</div>
+<div class="modal-body">
+	<div class="form-group">
+		<label for="LoginUsername">Nieuw gebruikersnaam</label>
+		<input type="text" class="form-control" id="LoginUsername" auto-focus ng-keydown="keyCheck($event)" ng-model="userinfo.username" ng-disabled="disabled">
+	</div>
+	<div class="form-group">
+		<label for="LoginPassword">Nieuw wachtwoord</label>
+		<input type="password" class="form-control" id="LoginPassword" ng-keydown="keyCheck($event)" ng-model="userinfo.password" ng-disabled="disabled">
+	</div>
+	<hr>
+	<div class="form-group">
+		<label for="LoginUn">Oude gebruikersnaam</label>
+		<input type="text" class="form-control" id="LoginUn" ng-keydown="keyCheck($event)" ng-model="userinfo.un" ng-disabled="disabled">
+	</div>
+	<div class="form-group">
+		<label for="LoginPw">Oud wachtwoord</label>
+		<input type="password" class="form-control" id="LoginPw" ng-keydown="keyCheck($event)" ng-model="userinfo.pw" ng-disabled="disabled">
+	</div>
+</div>
+<div class="modal-footer">
+	<p class="text-warning pull-left">{{warning}}</p>
+	<button class="btn btn-primary" ng-click="check()" ng-disabled="disabled">ok</button>
+	<button class="btn btn-default" ng-click="cancel()" ng-disabled="disabled">cancel</button>
+</div>
+</span>

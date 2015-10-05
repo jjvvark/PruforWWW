@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<meta charset="utf-8">
+	<title>Prudon Forensics Manager</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/xeditable.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap.js"></script>
+	<script type="text/javascript" src="js/xeditable.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/directives.js"></script>
+</head>
+<body ng-controller='controller' ng-init="init()">
+<div class="top">
+	<img src="images/logo-black.png" class="logo">
+	<div class="pull-right">
+		<div class="btn-group buttons">
+			<button class="btn btn-default" ng-click="openSettings();">settings</button>
+			<button class="btn btn-default" ng-click="logout();">logout</button>
+		</div>
+	</div>
+</div>
+<div class="container bumper">
+	<div class="row content">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h3 editable-text="col1.title" onbeforesave="save($data, 1, true);">{{col1.title || "leeg"}}</h3>
+			<span editable-textarea="col1.psrendered"  onbeforesave="save($data, 1, false);" e-rows="7" e-cols="70">
+				<p ng-repeat="p in col1.ps track by $index">{{p}}</p>
+			</span>
+		</div>
+	</div>
+	<div class="row content">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h3 editable-text="col2.title" onbeforesave="save($data, 2, true);">{{col2.title || "leeg"}}</h3>
+			<span editable-textarea="col2.psrendered" onbeforesave="save($data, 2, false);" e-rows="7" e-cols="70">
+				<p ng-repeat="p in col2.ps track by $index">{{p}}</p>
+			</span>
+		</div>
+	</div>
+	<div class="row content">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h3 editable-text="col3.title" onbeforesave="save($data, 3, true);">{{col3.title || "leeg"}}</h3>
+			<span editable-textarea="col3.psrendered" onbeforesave="save($data, 3, false);" e-rows="7" e-cols="70">
+				<p ng-repeat="p in col3.ps track by $index">{{p}}</p>
+			</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

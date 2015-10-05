@@ -1,0 +1,172 @@
+{{define "template"}}<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Prudon Forensics</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Hind:300,400,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+
+<div class="topnav">
+	<div class="topnav-inner">
+		<img src="images/logo-black.png" class="logo">
+		<ul class="menu u-pull-right hide-phone">
+			<li>
+				<a href="#one">{{.p.One.Title}}</a>
+			</li>
+			<li>
+				<a href="#two">{{.p.Two.Title}}</a>
+			</li>
+			<li>
+				<a href="#three">{{.p.Three.Title}}</a>
+			</li>
+		</ul>
+		<div class="menu u-pull-right show-phone phone-col">
+			06 - 54 522 323<br>info@prudonforensics.nl
+		</div>
+	</div>
+</div>
+
+<div class="hero">
+	<img src="images/title-04.png" class="hero-image u-max-full-width">
+	<div id="topcol" class="topcol hide-phone">
+		<p>06 - 54 522 323&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@prudonforensics.nl</p>
+	</div>
+</div>
+
+<div class="background-wrap" id="background-wrap">
+	<div class="container">
+		<div class="row content" id="one">
+			<div class="one column">
+				&nbsp;
+			</div>
+			<div class="ten columns">
+				<h3>{{.p.One.Title}}</h3>
+				{{range .p.One.Paras}}<p>{{.}}</p>{{end}}
+			</div>
+		</div>
+		<div class="row content" id="two">
+			<div class="one column">
+				&nbsp;
+			</div>
+			<div class="ten columns">
+				<h3>{{.p.Two.Title}}</h3>
+				{{range .p.Two.Paras}}<p>{{.}}</p>{{end}}
+			</div>
+		</div>
+		<div class="row content"  id="three">
+			<div class="one column">
+				&nbsp;
+			</div>
+			<div class="ten columns">
+				<h3>{{.p.Three.Title}}</h3>
+				{{range .p.Three.Paras}}<p>{{.}}</p>{{end}}
+			</div>
+		</div>
+	</div>
+
+	<div class="colofoon-wrap">
+		<div class="show-phone colf">
+			<div class="tel-inner">
+				<div class="tel-row">
+					<div class="tel-img">
+						<img src="images/icon-phone.png">
+					</div>
+					<div class="tel-text">
+						06 17071707
+					</div>
+				</div>
+				<div class="tel-row" style="clear:both;">
+					<div class="tel-img">
+						<img src="images/icon-mail.png">
+					</div>
+					<div class="tel-text">
+						info@prudonforensics.com
+					</div>
+				</div>
+				<div class="tel-row" style="clear:both;">
+					<div class="tel-img">
+						<img src="images/icon-adres.png">
+					</div>
+					<div class="tel-text">
+						Kalvermarkt 65k Den Haag
+					</div>
+				</div>
+<!-- 				<div class="tel-row" style="clear:both;height:136px;">
+					<div class="tel-img super">
+						<img src="images/copyright.png">
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="colofoon-inner hide-phone">
+			<div class="col-left">
+				<div class="tel-inner">
+					<div class="tel-row">
+						<div class="tel-img">
+							<img src="images/icon-phone.png">
+						</div>
+						<div class="tel-text">
+							06 17071707
+						</div>
+					</div>
+					<div class="tel-row" style="clear:both;">
+						<div class="tel-img">
+							<img src="images/icon-mail.png">
+						</div>
+						<div class="tel-text">
+							info@prudonforensics.com
+						</div>
+					</div>
+					<div class="tel-row" style="clear:both;">
+						<div class="tel-img">
+							<img src="images/icon-adres.png">
+						</div>
+						<div class="tel-text">
+							Kalvermarkt 65k Den Haag
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-middle">
+				<img src="images/line-vert.png">
+			</div>
+			<div class="col-right">
+				<img src="images/copyright.png" class="copyright">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
+{{end}}

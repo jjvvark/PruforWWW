@@ -1,0 +1,69 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+html, body {
+	height: 100% !important;
+	width: 100%;
+	color: white !important;
+	background-image: url('../images/bg-08.png');
+	background-repeat: repeat;
+	background-position: center top;
+}
+
+h3 {
+	font-size: 32px !important;
+	font-weight: 300 !important;
+}
+
+p {
+	font-size: 17px !important;
+	font-weight: 300 !important;
+	margin-bottom: 25px !important;
+}
+
+.message-from {
+	background-color: rgb(247, 247, 249);
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+
+.message-to {
+	background-color: rgb(229,229,234);
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 15px;
+}
+
+.hi {
+	width: 100%;
+}
+
+.bgContainer {
+	/*background-image: url('../images/bg-08.png');*/
+	height: 100%;
+	width: 100%;
+}
+
+.top {
+	width: 100%;
+	background-color: rgba(255,255,255,.7);
+	height: 80px;
+}
+
+.content {
+	padding-top: 50px;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.buttons {
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.bumper {
+	margin-bottom: 200px;
+}
